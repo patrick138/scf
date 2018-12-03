@@ -36,14 +36,18 @@ releases:
   url: https://bosh.io/d/github.com/cloudfoundry/loggregator-release?v=103.0
   version: "103.0"
   sha1: 41fe210afef030a9bae37795fdd7c5e5ca779ea3
+- name: "mapfs"
+  version: "1.1.0"
+  url: "https://bosh.io/d/github.com/cloudfoundry/mapfs-release?v=1.1.0"
+  sha1: "1ab1dfb802819ec6cda2d0d60370638d6f878528"
 - name: nats
   url: https://bosh.io/d/github.com/cloudfoundry/nats-release?v=24
   version: "24"
   sha1: 65d8efc68d86a03d0f51562e16763075c37e419d
 - name: "nfs-volume"
-  version: "1.2.0"
-  url: "https://bosh.io/d/github.com/cloudfoundry/nfs-volume-release?v=1.2.0"
-  sha1: "de807ffa3fc84949bb92edac6a4152245826d6da"
+  version: "1.5.2"
+  url: "https://bosh.io/d/github.com/cloudfoundry/nfs-volume-release?v=1.5.2"
+  sha1: "14d019e6fd83139fab5e8ee7f162bf6920235888"
 - name: cf-routing
   url: https://bosh.io/d/github.com/cloudfoundry-incubator/cf-routing-release?v=0.179.0
   version: 0.179.0
@@ -1261,6 +1265,8 @@ instance_groups:
         - name: nfs-admin
           protocol: TCP
           internal: 7590
+  - name: mapfs
+    release: mapfs
   configuration:
     templates:
       properties.bbs.hostname: '"diego-api-bbs.((KUBERNETES_NAMESPACE)).svc.((KUBERNETES_CLUSTER_DOMAIN))"' # cfdot property
