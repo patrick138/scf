@@ -225,7 +225,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 2
           affinity:
@@ -415,7 +415,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 2
           active-passive-probe: /var/vcap/jobs/global-properties/bin/readiness/diego-api
@@ -488,7 +488,7 @@ instance_groups:
             min: 1
             max: 65535
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 4
           healthcheck:
@@ -614,7 +614,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 4
           affinity:
@@ -979,7 +979,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 4
           affinity:
@@ -1037,7 +1037,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 4
           affinity:
@@ -1081,7 +1081,7 @@ instance_groups:
             min: 1
             max: 3
             ha: 2
-          capabilities: []
+          capabilities: [SYS_RESOURCE]
           memory: 128
           virtual-cpus: 2
           healthcheck:
