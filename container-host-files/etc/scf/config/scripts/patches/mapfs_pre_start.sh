@@ -47,7 +47,7 @@ patch -d "$PATCH_DIR" --force -p0 <<'PATCH'
  fi
  
 -modprobe fuse
-+modprobe fuse || ( echo 'Kernel module "fuse" required, missing. Please update your platform.' && false )
++#modprobe fuse || ( echo 'Kernel module "fuse" required, missing. Please update your platform.' && false )
  groupadd fuse || true
 -adduser vcap fuse
 +useradd fuse -g vcap
